@@ -1,0 +1,335 @@
+body {
+  background-color: #333;
+  color: white;
+}
+
+body a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+
+#container {
+  position: absolute;
+  padding: 10px 5%;
+}
+
+div #nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div #nav img {
+  min-width: 100px;
+}
+
+div #nav-right {
+  width: 20%;
+}
+
+div #nav-right #logo {
+  height: 20%;
+}
+
+div #nav-right #logo img {
+  width: 100%;
+}
+
+div #nav-right #donut-select-small {
+  display: none;
+  margin-top: 40px;
+  margin-bottom: -30px;
+  border-top: 1px solid white;
+}
+
+div #nav-right #donut-select-small ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+div #nav-bar {
+  width: 100%;
+}
+
+div #nav-bar #nav-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div #nav-bar #nav-up #donut-select {
+  border-left: 1px solid white;
+}
+
+div #nav-bar #nav-up #donut-select ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+div #nav-bar #nav-up #menu-button {
+  width: 15%;
+  margin-left: 15%;
+}
+
+div #nav-bar #nav-up #menu-button a {
+  display: block;
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+}
+
+div #nav-bar #nav-up #menu-button img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+div #nav-bar #nav-up #infos {
+  width: 40%;
+}
+
+div #nav-bar #nav-up #infos ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 20px;
+}
+
+div #nav-bar #nav-up #contact {
+  font-size: 30px;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin-top: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+div #nav-bar #nav-up #contact i {
+  position: relative;
+  padding: 0px 10px 0px 10px;
+}
+
+div #nav-bar #nav-up #contact #fb {
+  border-left: 1px solid white;
+}
+
+div #nav-bar #nav-up #contact button {
+  position: relative;
+  padding: 5px;
+  height: 50px;
+  color: white;
+  border: none;
+  font-weight: 800;
+  background-color: #ff558e;
+}
+
+div #nav-bar #menu {
+  margin-left: 20%;
+}
+
+div #nav-bar #menu ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 20px;
+}
+
+div #booking {
+  width: 80%;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: #333;
+  bottom: 12%;
+}
+
+div #booking #carousel-book {
+  width: 825px;
+  height: 100px;
+  top: 85%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+div #booking #carousel-book #css-carousel-book {
+  width: 200%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+div #booking #carousel-book .bookingDates {
+  background-color: #464646;
+  display: inline;
+  margin: 0 2%;
+  padding: 10px;
+  height: 30px;
+  margin-top: 20px;
+  outline: 1px solid #777;
+}
+
+div #booking #carousel-book .bookingDates:hover {
+  cursor: pointer;
+}
+
+div #booking h3 {
+  font-size: 30px;
+}
+
+div #booking h3 span {
+  color: #ff558e;
+}
+
+div #booking #arrow-right {
+  font-size: 50px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+div #booking #arrow-right:hover {
+  cursor: pointer;
+}
+
+div #booking #arrow-left {
+  font-size: 50px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+div #booking #arrow-left:hover {
+  cursor: pointer;
+}
+
+div .carousel {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+div .css-carousel {
+  width: 400%;
+  height: 100%;
+  -webkit-animation: css-carousel 20s linear infinite;
+  animation: css-carousel 20s linear infinite;
+}
+
+div .css-carousel .css-img {
+  width: 25%;
+  height: 100%;
+}
+
+div .css-carousel .css-img {
+  display: inline-block;
+}
+
+div .css-carousel img:not(:first-child) {
+  float: left;
+}
+
+@-webkit-keyframes css-carousel {
+  0%,
+  33% {
+    margin-left: 0;
+  }
+  34%,
+  66% {
+    margin-left: -100%;
+  }
+  67%,
+  99% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes css-carousel {
+  0%,
+  33% {
+    margin-left: 0;
+  }
+  34%,
+  66% {
+    margin-left: -100%;
+  }
+  67%,
+  99% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  div #nav-bar #nav-up #menu-button {
+    margin-left: 5%;
+  }
+  div #nav-bar #nav-up #infos {
+    width: 50%;
+  }
+  div #nav-bar #nav-up #donut-select {
+    display: none;
+  }
+  div #nav #nav-right #donut-select-small {
+    display: block;
+  }
+  div #booking {
+    bottom: 15%;
+  }
+  div .carousel {
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

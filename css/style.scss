@@ -1,0 +1,317 @@
+body {
+    background-color: #333;
+    color: white;
+
+    a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+}
+
+#container {
+    position: absolute;
+    padding: 10px 5%;
+}
+
+
+div {
+    #nav {
+        width: 100%;
+        display: flex;
+
+        img {
+            min-width: 100px;
+        }
+
+    }
+
+    #nav-right {
+
+        width: 20%;
+
+        #logo {
+            height: 20%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        #donut-select-small {
+            display: none;
+            margin-top: 40px;
+            margin-bottom: -30px;
+            border-top: 1px solid white;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none;
+                padding-left: 0;
+                margin-top: 0;
+            }
+
+        }
+
+    }
+
+
+
+    #nav-bar {
+
+        width: 100%;
+
+        #nav-up {
+            display: flex;
+            justify-content: space-between;
+
+            #donut-select {
+                border-left: 1px solid white;
+
+                ul {
+                    list-style-type: none;
+                    padding-left: 20px;
+                }
+            }
+
+            #menu-button {
+                width: 15%;
+                margin-left: 15%;
+
+                a {
+                    display: block;
+                    -webkit-margin-before: 0;
+                    margin-block-start: 0;
+                    -webkit-margin-after: 0;
+                    margin-block-end: 0;
+                }
+
+                img {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+            }
+
+            #infos {
+                width: 40%;
+
+                ul {
+                    list-style-type: none;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 20px;
+
+
+
+
+                }
+            }
+
+            #contact {
+                font-size: 30px;
+                display: block;
+                display: flex;
+                height: 100%;
+                margin-top: 20px;
+                justify-content: space-between;
+                position: relative;
+
+                i {
+                    position: relative;
+
+
+                    padding: 0px 10px 0px 10px;
+                }
+
+                #fb {
+                    border-left: 1px solid white;
+                }
+
+                button {
+                    position: relative;
+                    padding: 5px;
+                    height: 50px;
+                    color: white;
+
+
+                    border: none;
+                    font-weight: 800;
+                    background-color: #ff558e;
+                }
+
+
+            }
+        }
+
+        #menu {
+            margin-left: 20%;
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: space-between;
+                padding-left: 20px;
+            }
+        }
+    }
+
+
+    #booking {
+        width: 80%;
+        position: fixed;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        text-align: center;
+        background-color: #333;
+        bottom: 12%;
+
+        #carousel-book {
+            width: 825px;
+            height: 100px;
+            top: 85%;
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            overflow: hidden;
+
+
+            #css-carousel-book {
+                width: 200%;
+                height: 100%;
+                display: flex;
+                transition: transform 1s ease;
+            }
+
+            .bookingDates {
+                background-color: #464646;
+                display: inline;
+                margin: 0 2%;
+                padding: 10px;
+                height: 30px;
+                margin-top: 20px;
+                outline: 1px solid #777;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 30px;
+
+            span {
+                color: #ff558e;
+            }
+        }
+
+        #arrow-right {
+            font-size: 50px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        #arrow-left {
+            font-size: 50px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .carousel {
+        width: 100%;
+        height: 600px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .css-carousel {
+        width: 400%;
+        height: 100%;
+        -webkit-animation: css-carousel 20s linear infinite;
+        -moz-animation: css-carousel 20s linear infinite;
+        -ms-animation: css-carousel 20s linear infinite;
+        animation: css-carousel 20s linear infinite;
+
+        .css-img {
+            width: 25%;
+            height: 100%;
+        }
+    }
+
+    .css-carousel .css-img {
+        display: inline-block;
+    }
+
+    .css-carousel img:not(:first-child) {
+        float: left;
+    }
+
+    @keyframes css-carousel {
+
+        0%,
+        33% {
+            margin-left: 0
+        }
+
+        34%,
+        66% {
+            margin-left: -100%;
+        }
+
+        67%,
+        99% {
+            margin-left: -200%;
+        }
+
+        100% {
+            margin-left: 0;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1500px) {
+    div #nav-bar #nav-up #menu-button {
+        margin-left: 5%;
+    }
+
+    div #nav-bar #nav-up #infos {
+        width: 50%;
+    }
+
+    div #nav-bar #nav-up #donut-select {
+        display: none;
+    }
+
+    div #nav #nav-right #donut-select-small {
+        display: block;
+    }
+
+    div #booking {
+        bottom: 15%;
+    }
+
+    div .carousel {
+        height: 100%;
+    }
+}
