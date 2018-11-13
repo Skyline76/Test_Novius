@@ -1,4 +1,4 @@
-<?php include 'programmation.php';?>
+<?php ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,12 +73,6 @@
         </div>
         <div id="carousel-book">
             <div id="css-carousel-book">
-            <?php
-                $book = formatDate($bookingDates);
-                for ($i=0; $i<count($book); $i++) {
-                        echo '<div class="bookingDates">'.strtoupper($book[$i]).'</div>';
-                    }
-            ?>
             </div>
             <div id="arrow-right">
                 <i class="fas fa-angle-right"></i>

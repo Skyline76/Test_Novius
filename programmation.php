@@ -1,5 +1,5 @@
 <?php
-setlocale(LC_ALL, "French");
+setlocale(LC_ALL, "French"); //set local to french to have right day names
 
 $bookingDates = [
   '2018-10-10',
@@ -14,12 +14,15 @@ $bookingDates = [
   '2018-10-25',
 ];
 
-function formatDate($tab){
+function formatDate($tab){ //format the date
   foreach ($tab as $t){
-    $date = strftime("%a %m/%e", strtotime($t));
+    $date = strftime("%a %m/%e", strtotime($t)); //format to have the french version of the day names
+    $date = strtoupper($date);
     $arrayDate[] = $date;
   }
-  return $arrayDate;
+  return json_encode($arrayDate);
 }
+
+echo formatDate($bookingDates);
 
 ?>
